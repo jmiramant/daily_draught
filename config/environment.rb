@@ -15,10 +15,13 @@ require 'pg'
 require 'active_record'
 require 'logger'
 
+require 'fusion_tables'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'erb'
+require 'brewery_db'
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
@@ -31,3 +34,6 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 
 # Set up the database and models
 require APP_ROOT.join('config', 'database')
+require APP_ROOT.join('config', 'env_vars')
+require APP_ROOT.join('config', 'brewery_db')
+require APP_ROOT.join('config', 'fusion')

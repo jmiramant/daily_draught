@@ -15,11 +15,17 @@ gem 'activerecord'
 
 gem 'rake'
 
-gem 'brewery_db'
+gem 'brewery_db', github: 'jmiramant/brewery_db', branch: 'add-locations-resource'
+
+gem 'fusion_tables'
 
 gem 'shotgun'
 
 group :test do
   gem 'faker'
   gem 'rspec'
+end
+
+group :development do
+  gem 'awesome_print'
 end
