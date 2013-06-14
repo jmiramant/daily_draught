@@ -13,6 +13,12 @@ gem 'thin'
 gem 'activesupport'
 gem 'activerecord'
 
+gem 'haml'
+
+gem 'mechanize'
+
+gem 'geocoder'
+
 gem 'rake'
 
 gem 'brewery_db', github: 'jmiramant/brewery_db', branch: 'add-locations-resource'
@@ -20,6 +26,8 @@ gem 'brewery_db', github: 'jmiramant/brewery_db', branch: 'add-locations-resourc
 gem 'fusion_tables'
 
 gem 'shotgun'
+
+gem 'debugger'
 
 group :test do
   gem 'faker'
